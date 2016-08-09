@@ -1,0 +1,21 @@
+<h1>Welcome to your daily task manager</h1>
+
+
+<%= link_to 'create task', new_task_path %>
+
+
+<% @tasks.each do |task|%>
+  <p><%= task.name %></p>
+  <p><%= task.done %></p>
+  <%= link_to 'show task', task_path(task) %>
+  <%= link_to 'edit task', edit_task_path(task) %>
+  <%= link_to 'delete task', task_path(task), method: :delete %>
+<% end%>
+
+
+
+
+
+
+
+

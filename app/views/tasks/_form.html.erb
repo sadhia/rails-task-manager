@@ -1,0 +1,7 @@
+<%= form_for @task, class: '', id: '' do |f| %>
+  <%= f.label :name, 'Name' %>
+  <%= f.text_field :name, class: 'text' %>
+  <%= f.label :done, 'task is done' %>
+  <%= f.check_box :done %>
+  <%= f.submit wording %>
+<% end %>
